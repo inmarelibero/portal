@@ -195,10 +195,10 @@ Next, you'll use the `minter` identity you created in the last module, [4.1 Usin
 
 ```bash
 dfx identity use minter
-export MINTER_ACCOUNT_ID=$(dfx ledger account-id)
+export MINTER=$(dfx identity get-principal)
 ```
 
-The environment variable `MINTER_ACCOUNT_ID` is the principal ID responsible for minting and burning tokens.
+The environment variable `MINTER` is the principal ID responsible for minting and burning tokens.
 
 Then, export the name and symbol of your token:
 
